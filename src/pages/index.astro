@@ -1,0 +1,363 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+  <div class="fixed inset-0 z-[-2] overflow-hidden">
+    <img src="https://res.cloudinary.com/dctlpj7fg/image/upload/v1785208591/1000068291_esiivw.jpg" alt="Background" class="w-full h-full object-cover" />
+  </div>
+  <div class="fixed inset-0 z-[-1] bg-black/85"></div>
+
+  <main class="min-h-screen bg-transparent text-white p-6 md:p-12 font-mono selection:bg-[#3757C1] selection:text-white">
+        
+    <!-- TOP COMMAND HEADER -->
+    <header class="max-w-6xl mx-auto mb-10 border border-neutral-800 bg-black p-6 md:p-8 rounded-none relative shadow-2xl">
+      <div class="absolute top-0 left-0 w-full h-[2px] bg-[#3757C1]"></div>
+      <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+        <div>
+          <div class="flex items-center gap-2 text-xs text-[#3757C1] tracking-widest uppercase mb-1">
+            <span class="inline-block w-2 h-2 bg-[#3757C1] animate-pulse"></span>
+            System Online
+          </div>
+          <h1 class="text-3xl md:text-4xl font-bold tracking-tight text-white">ARMORY DEV</h1>
+          <p class="text-neutral-400 text-sm mt-1">Developer, system admin, professional idiot.</p>
+        </div>
+        <div class="flex items-center gap-3">
+          <div class="border border-neutral-800 bg-black px-4 py-2 text-xs text-neutral-400">
+            COMPLETED COMMISSIONS: <span class="text-[#3757C1] font-semibold">2</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN GRID CONTAINER -->
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+
+      <!-- COLUMN 1 & 2: FLAGSHIP PROJECTS -->
+      <div class="md:col-span-2 space-y-6">
+
+      <!-- SUPPORTED TITLES MATRIX -->
+          <div class="border-b border-neutral-800 pb-2 text-xs font-bold tracking-wider text-neutral-400 uppercase">// Supported Titles</div>
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 mt-2">
+          <div class="bg-black border border-neutral-800 px-3 py-2 text-xs text-neutral-300 flex items-center justify-between">
+            <span class="leading-none pt-0.5">Modern Warfare 2019</span>
+            <span class="w-1.5 h-1.5 bg-[#3757C1] rounded-full shrink-0"></span>
+          </div>
+          <div class="bg-black border border-neutral-800 px-3 py-2 text-xs text-neutral-300 flex items-center justify-between">
+            <span class="leading-none pt-0.5">Modern Warfare 2 (2022)</span>
+            <span class="w-1.5 h-1.5 bg-[#3757C1] rounded-full shrink-0"></span>
+          </div>
+          <div class="bg-black border border-neutral-800 px-3 py-2 text-xs text-neutral-300 flex items-center justify-between">
+            <span class="leading-none pt-0.5">Modern Warfare 3 (2023)</span>
+            <span class="w-1.5 h-1.5 bg-[#3757C1] rounded-full shrink-0"></span>
+          </div>
+          <div class="bg-black border border-neutral-800 px-3 py-2 text-xs text-neutral-300 flex items-center justify-between">
+            <span class="leading-none pt-0.5">Modern Warfare 4 (Planned)</span>
+            <span class="w-1.5 h-1.5 bg-[#3757C1] rounded-full shrink-0"></span>
+          </div>
+          <div class="bg-black border border-neutral-800 px-3 py-2 text-xs text-neutral-300 flex items-center justify-between">
+            <span class="leading-none pt-0.5">Black Ops Cold War</span>
+            <span class="w-1.5 h-1.5 bg-[#3757C1] rounded-full shrink-0"></span>
+          </div>
+          <div class="bg-black border border-neutral-800 px-3 py-2 text-xs text-neutral-300 flex items-center justify-between">
+            <span class="leading-none pt-0.5">Black Ops 6</span>
+            <span class="w-1.5 h-1.5 bg-[#3757C1] rounded-full shrink-0"></span>
+          </div>
+          <div class="bg-black border border-neutral-800 px-3 py-2 text-xs text-neutral-300 flex items-center justify-between">
+            <span class="leading-none pt-0.5">Black Ops 7</span>
+            <span class="w-1.5 h-1.5 bg-[#3757C1] rounded-full shrink-0"></span>
+          </div>
+        </div>
+        
+        <!-- SECTION TITLE -->
+        <div class="border-b border-neutral-800 pb-2 text-xs font-bold tracking-wider text-neutral-400 uppercase">
+          // Public Projects
+        </div>
+
+        <!-- ARMORY BOT / APP CARD -->
+        <div class="border border-neutral-800 bg-black p-6 relative group hover:border-[#3757C1] transition-colors">
+          <div class="absolute top-0 right-0 bg-[#3757C1] text-white text-[10px] px-2.5 py-0.5 uppercase tracking-wider font-bold">
+            Core Project
+          </div>
+          <h2 class="text-xl font-bold text-white tracking-wide">Armory Bot</h2>
+          <p class="text-neutral-400 text-sm mt-2 leading-relaxed">
+            Armory Bot is a feature packed Discord bot that was once only a dream. It gets its data from The Armory, an aptly named SQL database housing hundreds of custom built, tuned and tested loadouts, weapon stats, and attachments for weapons featured in Call of Duty. Capable of iterating through all this data without breaking a sweat thanks to AEGIS, you can be sure you're never out of the loop again when it comes to meta shifts, needing a wacky loadout courtesy of the randomizer engine, or keeping track of the best augments to use in the zombies game mode.
+          </p>
+
+    <!-- ARCHITECTURE STACK -->
+            <div class="mt-4 pt-3 border-t border-neutral-900">
+              <div class="text-[11px] font-bold text-[#3757C1] tracking-wider uppercase mb-2">Core Architecture</div>
+              <div class="flex flex-wrap gap-2">
+                <!-- Standard Tech -->
+                <span class="px-3 py-1.5 text-xs bg-black border border-[#3757C1] text-white font-mono shadow-[0_0_10px_rgba(55,87,193,0.2)] flex items-center gap-1.5">
+                  <span class="w-1.5 h-1.5 bg-[#3757C1] rounded-full"></span>Python / API</span>
+                
+                <!-- SQL Database Badge (The Armory Root) -->
+                <span class="px-3 py-1.5 text-xs bg-black border border-[#3757C1] text-white font-mono shadow-[0_0_10px_rgba(55,87,193,0.2)] flex items-center gap-1.5">
+                  <span class="w-1.5 h-1.5 bg-[#3757C1] rounded-full"></span>
+                  SQL Database
+                </span>
+
+                <!-- Custom AEGIS Engine (High Priority Accent Border & Black Container) -->
+                <span class="px-3 py-1.5 text-xs bg-black border border-[#3757C1] text-white font-mono shadow-[0_0_10px_rgba(55,87,193,0.2)] flex items-center gap-1.5">
+                  <span class="w-1.5 h-1.5 bg-[#3757C1] rounded-full"></span>
+                  Custom AEGIS Engine
+                </span>
+                
+                <span class="px-3 py-1.5 text-xs bg-black border border-[#3757C1] text-white font-mono shadow-[0_0_10px_rgba(55,87,193,0.2)] flex items-center gap-1.5">
+                  <span class="w-1.5 h-1.5 bg-[#3757C1] rounded-full"></span>
+                  Integrated with Armory App
+                </span>
+              </div>
+            </div>
+        </div>
+
+
+        <div class="border border-neutral-800 bg-black p-6 relative group hover:border-[#3757C1] transition-colors">
+          <div class="absolute top-0 right-0 bg-[#3757C1] text-white text-[10px] px-2.5 py-0.5 uppercase tracking-wider font-bold">
+            Core Project
+          </div>
+          <h2 class="text-xl font-bold text-white tracking-wide">Armory App</h2>
+          <p class="text-neutral-400 text-sm mt-2 leading-relaxed">
+            Built from the ground up, Armory App aims to take everything Armory Bot is and improve in every way. Better engines with higher limits, custom themes and fonts to make it feel more personal, building on the AEGIS architecture with systems like Slipstream, enabling hotfixes for updated weapon data so you're always up to date, ARC enabling localization in 4 other languages, and even things Armory Bot could never do like AEGIS Eye and Armory Delta. There's so much Armory App can do, and with the introduction of a PWA build, you can access it anywhere; Even your fridge!
+          </p>
+
+        <div class="mt-4 pt-3 border-t border-neutral-900">
+          <div class="text-[11px] font-bold text-[#3757C1] tracking-wider uppercase mb-2">Core Architecture</div>
+          <div class="flex flex-wrap gap-2">
+            <!-- Standard Tech -->
+            <span class="px-3 py-1.5 text-xs bg-black border border-[#3757C1] text-white font-mono shadow-[0_0_10px_rgba(55,87,193,0.2)] flex items-center gap-1.5">
+              <span class="w-1.5 h-1.5 bg-[#3757C1] rounded-full"></span>Flutter</span>
+            
+            <!-- SQL Database Badge (The Armory Root) -->
+            <span class="px-3 py-1.5 text-xs bg-black border border-[#3757C1] text-white font-mono shadow-[0_0_10px_rgba(55,87,193,0.2)] flex items-center gap-1.5">
+              <span class="w-1.5 h-1.5 bg-[#3757C1] rounded-full"></span>
+              Custom Built AEGIS Engine
+            </span>
+            
+            <span class="px-3 py-1.5 text-xs bg-black border border-[#3757C1] text-white font-mono shadow-[0_0_10px_rgba(55,87,193,0.2)] flex items-center gap-1.5">
+              <span class="w-1.5 h-1.5 bg-[#3757C1] rounded-full"></span>
+              Integrated with Armory Bot
+            </span>
+          </div>
+        </div>
+       </div>
+
+        <!-- PERSONAL PROJECT GRID -->
+        <div class="border-b border-neutral-800 pb-2 text-xs font-bold tracking-wider text-neutral-400 uppercase pt-4">
+          // Personal Projects
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+
+          <div class="border border-neutral-800 bg-black p-5 hover:border-neutral-600 transition-colors">
+            <h3 class="font-bold text-sm text-white">Quality of Life</h3>
+            <p class="text-neutral-400 text-xs mt-2 leading-relaxed">
+              Pi-Hole network filtering for those pesky ads, and custom scripts that fire off when the power or the network goes, ensuring everything fixes itself without me lifting a finger.
+            </p>
+          </div>
+
+          <div class="border border-neutral-800 bg-black p-5 hover:border-neutral-600 transition-colors">
+            <h3 class="font-bold text-sm text-white">Audio Tools</h3>
+            <p class="text-neutral-400 text-xs mt-2 leading-relaxed">
+              Custom audio mixer with dynamic audio sliders, vibrant visuals, and functioning soundboard. Yes, I can be THAT guy.
+            </p>
+          </div>
+
+          <div class="border border-neutral-800 bg-black p-5 hover:border-neutral-600 transition-colors">
+            <h3 class="font-bold text-sm text-white">Sniffer</h3>
+            <p class="text-neutral-400 text-xs mt-2 leading-relaxed">
+              A simple Discord bot for The Cabbage Patch, my personal server. Designed to sniff voice channels, and send an alert message when a member joins. No more "I didn't see you in vc" messages at 1AM.
+            </p>
+          </div>
+
+        <div class="border border-neutral-800 bg-black p-5 hover:border-neutral-600 transition-colors">
+            <h3 class="font-bold text-sm text-white">Monitor Switcher</h3>
+            <p class="text-neutral-400 text-xs mt-2 leading-relaxed">
+              A simple xrandr script designed to make life with 2 monitors easy. One keyboard shortcut and my output swaps to either monitor, and applies custom display rules like refresh rate, resolution, and colour correction. No more fighting with buttons that require 18 presses to select the output.
+            </p>
+          </div>
+        </div>
+
+        </div>
+
+        <!-- COLUMN 2: COMMISSIONS SIDEBAR -->
+      <div class="space-y-6 pt-2 md:pt-5.5">
+
+        <!-- LINKS CONTAINER -->
+        <div class="border border-[#3757C1] bg-black p-6 relative">
+          <h2 class="text-sm font-bold tracking-wider text-white uppercase mb-4">LINKS</h2>
+          
+          <div class="space-y-3">
+            <a href="https://top.gg/bot/1313580706131087421" target="_blank" class="block bg-black border border-neutral-800 p-3 hover:border-[#3757C1] transition-colors group">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-neutral-900 border border-neutral-800 overflow-hidden flex items-center justify-center shrink-0 group-hover:border-[#3757C1] transition-colors">
+                  <img src="https://res.cloudinary.com/dctlpj7fg/image/upload/v1785201897/ios_hwkvn9.png" alt="Armory Bot" class="w-full h-full object-cover" />
+                </div>
+                <div class="flex items-center justify-between w-full">
+                  <span class="text-xs font-bold text-white group-hover:text-[#3757C1] transition-colors">ARMORY BOT</span>
+                  <span class="text-xs text-neutral-600 group-hover:text-[#3757C1] transition-colors"></span>
+                </div>
+              </div>
+            </a>
+
+            <a href="https://wormeo.github.io/armory-app-web/" target="_blank" class="block bg-black border border-neutral-800 p-3 hover:border-[#3757C1] transition-colors group">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-neutral-900 border border-neutral-800 overflow-hidden flex items-center justify-center shrink-0 group-hover:border-[#3757C1] transition-colors">
+                  <img src="https://res.cloudinary.com/dctlpj7fg/image/upload/v1785201897/ios_hwkvn9.png" alt="Armory App Web" class="w-full h-full object-cover" />
+                </div>
+                <div class="flex items-center justify-between w-full">
+                  <span class="text-xs font-bold text-white group-hover:text-[#3757C1] transition-colors">ARMORY APP WEB</span>
+                  <span class="text-xs text-neutral-600 group-hover:text-[#3757C1] transition-colors"></span>
+                </div>
+              </div>
+            </a>
+
+            <a href="https://discord.gg/mE5DRyf2BX" target="_blank" class="block bg-black border border-neutral-800 p-3 hover:border-[#3757C1] transition-colors group">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-neutral-900 border border-neutral-800 overflow-hidden flex items-center justify-center shrink-0 group-hover:border-[#3757C1] transition-colors">
+                  <img src="https://res.cloudinary.com/dctlpj7fg/image/upload/v1785202169/Discord_Logo_sans_texte.svg_s807lz.webp" alt="Discord" class="w-full h-full object-cover" />
+                </div>
+                <div class="flex items-center justify-between w-full">
+                  <span class="text-xs font-bold text-white group-hover:text-[#3757C1] transition-colors">THE ARMORY DISCORD SERVER</span>
+                  <span class="text-xs text-neutral-600 group-hover:text-[#3757C1] transition-colors"></span>
+                </div>
+              </div>
+            </a>
+
+            <a href="https://www.instagram.com/shd0w_plays/?hl=en" target="_blank" class="block bg-black border border-neutral-800 p-3 hover:border-[#3757C1] transition-colors group">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-neutral-900 border border-neutral-800 overflow-hidden flex items-center justify-center shrink-0 group-hover:border-[#3757C1] transition-colors">
+                  <img src="https://res.cloudinary.com/dctlpj7fg/image/upload/v1785204975/Instagram_logo_2022_d7njib.svg" alt="Discord" class="w-full h-full object-cover" />
+                </div>
+                <div class="flex items-center justify-between w-full">
+                  <span class="text-xs font-bold text-white group-hover:text-[#3757C1] transition-colors">GUITAR PAGE</span>
+                  <span class="text-xs text-neutral-600 group-hover:text-[#3757C1] transition-colors"></span>
+                </div>
+              </div>
+            </a>
+
+            <a href="https://www.instagram.com/wormswoodshop/?hl=en" target="_blank" class="block bg-black border border-neutral-800 p-3 hover:border-[#3757C1] transition-colors group">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-neutral-900 border border-neutral-800 overflow-hidden flex items-center justify-center shrink-0 group-hover:border-[#3757C1] transition-colors">
+                  <img src="https://res.cloudinary.com/dctlpj7fg/image/upload/v1785204975/Instagram_logo_2022_d7njib.svg" alt="Discord" class="w-full h-full object-cover" />
+                </div>
+                <div class="flex items-center justify-between w-full">
+                  <span class="text-xs font-bold text-white group-hover:text-[#3757C1] transition-colors">WOODWORKING PAGE</span>
+                  <span class="text-xs text-neutral-600 group-hover:text-[#3757C1] transition-colors"></span>
+                </div>
+              </div>
+            </a>
+
+          </div>
+        </div>
+
+        <!-- COMMISSIONS CONTAINER -->
+        <div class="border border-[#3757C1] bg-black p-6 relative">
+          <div class="absolute top-0 right-0 bg-[#3757C1] text-white text-[10px] px-2 py-0.5 uppercase font-bold">
+            Open
+          </div>
+          <h2 class="text-sm font-bold tracking-wider text-white uppercase">Commissions</h2>
+          <div class="bg-black border border-neutral-800 p-4 mt-3">
+            <p class="text-neutral-400 text-xs leading-relaxed">
+              Looking for custom Discord bots of your own? Have an idea for something you wanna make but don't know where to start? Commission me! Tell me your vision, allow me to refine it, and I'll build it. I'm very fair, with satisfied customers behind my back already!
+            </p>
+          </div>
+
+          <!-- DIRECT DISCORD BUTTON -->
+          <div class="mt-4">
+            <button id="btn-discord" class="w-full text-center bg-black border border-[#3757C1] hover:bg-[#3757C1]/20 text-white text-xs font-bold py-2 px-4 uppercase tracking-wider transition-colors cursor-pointer">
+              Discord
+            </button>
+          </div>
+
+          <!-- SMOOTH DROPDOWN CONTAINER FOR DISCORD -->
+          <div id="panel-discord" class="overflow-hidden transition-all duration-300 ease-in-out max-h-0 opacity-0">
+            <div class="mt-4 pt-4 border-t border-neutral-900 space-y-3">
+              <div class="text-[11px] text-[#3757C1] uppercase tracking-wider">Add me and let's chat!</div>
+              <div class="bg-black border border-neutral-800 p-3 flex items-center gap-3">
+                <div class="w-10 h-10 bg-neutral-900 border border-neutral-800 overflow-hidden flex items-center justify-center shrink-0">
+                  <img src="https://res.cloudinary.com/dctlpj7fg/image/upload/v1785203351/69d4f553a801270cc080e78402855353_ctqhcv.jpg" alt="Avatar" class="w-full h-full object-cover" />
+                </div>
+                <div class="w-full flex items-center justify-between bg-black border border-neutral-800 px-3 py-2">
+                  <span id="discord-id-text" class="text-xs text-neutral-300 font-mono select-all">synshdow</span>
+                  <button id="btn-copy" class="text-[10px] text-[#3757C1] hover:underline uppercase tracking-wider cursor-pointer">
+                    Copy
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+            <!-- HOBBIES & OFFLINE CONTAINER -->
+        <div class="border border-[#3757C1] bg-black p-6 relative">
+          <h2 class="text-sm font-bold tracking-wider text-white uppercase mb-4">Hobbies</h2>
+          
+          <div class="space-y-3">
+            
+            <div class="bg-black border border-neutral-800 p-3">
+              <div class="text-xs font-bold text-white mb-1">Woodworking</div>
+              <p class="text-neutral-400 text-xs leading-relaxed">
+                Building custom furniture, housings for electronics, workstations and more. One of my favourite passions in life.
+              </p>
+            </div>
+
+            <div class="bg-black border border-neutral-800 p-3">
+              <div class="text-xs font-bold text-white mb-1">Guitar & Audio Engineering</div>
+              <p class="text-neutral-400 text-xs leading-relaxed">
+                Playing whatever, but mostly the good stuff. I upload professional covers mixed and mastered by yours truly. I'm always tinkering with my sound and my equipment.
+              </p>
+            </div>
+
+            <div class="bg-black-950 border border-neutral-800 p-3">
+              <div class="text-xs font-bold text-white mb-1">Electronic Tinkering/Repair</div>
+              <p class="text-neutral-400 text-xs leading-relaxed">
+                Taking things apart, putting them back together after learning how they work, and of course some modding. My first ever project was restoring the fabled PS3 front housing led. A worthy first step into the world of soldering.
+              </p>
+            </div>
+
+            <div class="bg-black border border-neutral-800 p-3">
+              <div class="text-xs font-bold text-white mb-1">Writing</div>
+              <p class="text-neutral-400 text-xs leading-relaxed">
+                I express myself through creative writing. With a myriad of finished (and mostly unfinished) pieces, there's always something on my mind waiting to be transformed into a multi-part series that doesn't.. get finished. *sigh*
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="max-w-6xl mx-auto mt-12 text-center text-xs text-neutral-600 border-t border-neutral-900 pt-6">
+    </footer>
+
+  </main>
+
+  <!-- INTERACTIVE CLIENT SCRIPT -->
+  <script>
+    const btnDiscord = document.getElementById('btn-discord');
+    const panelDiscord = document.getElementById('panel-discord');
+    const btnCopy = document.getElementById('btn-copy');
+
+    btnDiscord?.addEventListener('click', () => {
+      const isOpen = panelDiscord?.style.maxHeight && panelDiscord.style.maxHeight !== '0px';
+      if (isOpen) {
+        panelDiscord.style.maxHeight = '0px';
+        panelDiscord.style.opacity = '0';
+      } else {
+        panelDiscord.style.maxHeight = panelDiscord.scrollHeight + 150 + 'px';
+        panelDiscord.style.opacity = '1';
+      }
+    });
+
+    btnCopy?.addEventListener('click', () => {
+      const idText = document.getElementById('discord-id-text')?.innerText || 'synshdow';
+      navigator.clipboard.writeText(idText);
+      btnCopy.innerText = 'Copied!';
+      setTimeout(() => {
+        btnCopy.innerText = 'Copy';
+      }, 2000);
+    });
+  </script>
+</Layout>
